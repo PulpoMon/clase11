@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap con archivos -->
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap CSS con link CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Link a CSS PROPIO -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aprendiendo Bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-rojo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Logo <!--logo--></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ejemplo 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ejemplo 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ejemplo 3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="container">
+        <h1>Hola estoy usando Bootstrap</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam eaque ad repudiandae tempore exercitationem, incidunt repellendus accusantium nostrum! Eaque praesentium alias tempore a deserunt atque, blanditiis eos repudiandae et.</p>
+    </section>
+
+    <section class="container-fluid">
+        <h2 class="lead">Container Fluid</h2>
+        <p class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, ex quos, harum amet molestias necessitatibus vel laboriosam neque cumque aspernatur maxime dolor voluptatibus commodi maiores pariatur? Explicabo maiores numquam beatae!</p>
+
+        <!-- Sistema de grillas de Bootstrap basado en 12 colmunas  -->
+        <div class="row">
+            <!-- class=col+tamaño+cc -->
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, quisquam cum suscipit ab consectetur itaque similique inventore aspernatur, rerum optio blanditiis corporis voluptates ullam dolorum deserunt magni exercitationem iusto? Ullam!</p>
+
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, quisquam cum suscipit ab consectetur itaque similique inventore aspernatur, rerum optio blanditiis corporis voluptates ullam dolorum deserunt magni exercitationem iusto? Ullam!</p>
+
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, quisquam cum suscipit ab consectetur itaque similique inventore aspernatur, rerum optio blanditiis corporis voluptates ullam dolorum deserunt magni exercitationem iusto? Ullam!</p>
+
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, quisquam cum suscipit ab consectetur itaque similique inventore aspernatur, rerum optio blanditiis corporis voluptates ullam dolorum deserunt magni exercitationem iusto? Ullam!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-center">Carrusel</h2>
+        <div id="carouselExample" class="carousel slide mx-auto">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/book-863418_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/road-220058_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/tree-832079_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <footer>
+        <h3 class="text-center">Redes Sociales</h3>
+        
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+    </footer>
+
+
+    <!-- Justo antes del cierre del BODY, linkeamos el JS de Bootstrap -->
+    <!-- Bootstrap JS con archivos -->
+    <!-- <script src="bootstrap-5.3.2-dist/js/"></script> -->
+
+    <!-- Bootstrap JS con link CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
