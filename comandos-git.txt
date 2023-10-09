@@ -31,3 +31,11 @@ Crea una rama con el nombre que le asignen.
 
 9. git chechout nombrerama:
 Sirve para moverse entre ramas.
+
+10. git merge nombrerama:
+Fusiona los cambios de una rama dentro de la rama principal
+
+Tener en cuenta que para hacer el Merge:
+
+a. La rama no debe tener add . ni commit pendientes
+b. Debemos movernos a la rama principal. Pues la fusion o Merge no funciona desde una rama.
