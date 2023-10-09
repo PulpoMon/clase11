@@ -20,3 +20,14 @@ Genera un historial completo de los ultimos commits, usuario, fecha y hora de es
 
 6. git log --oneline:
 Genera un historial resumido.
+
+>>>> Antes de cambiar de ramas hacer los pasos para guardar -> git status -> git add . -> git commit -m "x"
+
+7. git branch:
+Consulta las ramas disponibles
+
+8. git branch nombrecualquiera:
+Crea una rama con el nombre que le asignen.
+
+9. git chechout nombrerama:
+Sirve para moverse entre ramas.
