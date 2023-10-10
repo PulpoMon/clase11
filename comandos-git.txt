@@ -39,3 +39,5 @@ Tener en cuenta que para hacer el Merge:
 
 a. La rama no debe tener add . ni commit pendientes
 b. Debemos movernos a la rama principal. Pues la fusion o Merge no funciona desde una rama.
+
+11. PARA SUBIR A GITHUB SIEMPRE DEBE ESTAR EL ARBOL DE TRABAJO LIMPIO. HABIENDO HECHO EL GIT COMMIT.
